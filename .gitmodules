@@ -6,3 +6,6 @@
 	url = git@github.com:MisterChief53/Metapulse-wiki.git
 [submodule ".\\Wiki\\"]
 	branch = master
+[submodule "WebServer"]
+	path = WebServer
+	url = git@github.com:MisterChief53/Metapulse-website.git
