@@ -1,17 +1,15 @@
-import subprocess
+import os
 
-def update_submodules():
-    try:
-        # Command to initialize and update all submodules
-        subprocess.run(["git", "submodule", "update", "--init", "--recursive"], check=True)
-        
-        # Command to update each submodule to its most updated master branch
-        subprocess.run(["git", "submodule", "foreach", "git", "checkout", "master"], check=True)
-        subprocess.run(["git", "submodule", "foreach", "git", "pull", "origin", "master"], check=True)
-        
-        print("Submodules updated successfully!")
-    except subprocess.CalledProcessError as e:
-        print("Error updating submodules:", e)
+os.system("cd .\\WebView\\tests\\cefsimple")
+os.system("git fetch")
+os.system("git pull origin master")
+os.system("cd ..\\..\\..\\")
 
-if __name__ == "__main__":
-    update_submodules()
+os.system("cd .\\Wiki\\")
+os.system("git fetch")
+os.system("git pull origin master")
+os.system("cd ..\\")
+
+os.system("git add .")
+os.system("git commit -m \"updated submodules to latest commit\"")
+os.system("git push origin master")
