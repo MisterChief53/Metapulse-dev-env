@@ -9,3 +9,6 @@
 [submodule "WebServer"]
 	path = WebServer
 	url = git@github.com:MisterChief53/Metapulse-website.git
+[submodule "AccountsServer"]
+	path = AccountsServer
+	url = git@github.com:MisterChief53/Metapulse-accounts-server.git
