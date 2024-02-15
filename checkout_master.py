@@ -1,29 +1,30 @@
 import os
 
-os.system("cd .\\WebView\\tests\\cefsimple")
-os.system("git fetch")
-os.system("git checkout master")
-os.system("git pull origin master")
-os.system("cd ..\\..\\..\\")
+# Define a list of directories to loop through
+directories = [
+    ".\\WebView\\tests\\cefsimple",
+    ".\\Wiki",
+    ".\\WebServer",
+    ".\\AccountsServer"
+]
 
-os.system("cd .\\Wiki\\")
-os.system("git fetch")
-os.system("git checkout master")
-os.system("git pull origin master")
-os.system("cd ..\\")
+# Loop through each directory
+for directory in directories:
+    # Change directory
+    os.chdir(directory)
+    
+    # Run git commands
+    os.system("git fetch")
+    os.system("git checkout master")
+    os.system("git pull origin master")
+    
+    if directory == ".\\WebView\\tests\\cefsimple":
+        os.chdir("..\\..\\..\\")
+    else:
+        # Change back to parent directory
+        os.chdir("..")
 
-os.system("cd .\\WebServer\\")
-os.system("git fetch")
-os.system("git checkout master")
-os.system("git pull origin master")
-os.system("cd ..\\")
-
-os.system("cd .\\AccountsServer\\")
-os.system("git fetch")
-os.system("git checkout master")
-os.system("git pull origin master")
-os.system("cd ..\\")
-
+# Commit and push changes in the main repository
 os.system("git add .")
 os.system("git commit -m \"updated submodules to latest commit, and left them at master\"")
 os.system("git push origin master")
