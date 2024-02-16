@@ -5,7 +5,8 @@ directories = [
     ".\\WebView\\tests\\cefsimple",
     ".\\Wiki",
     ".\\WebServer",
-    ".\\AccountsServer"
+    ".\\AccountsServer",
+    ".\\InferenceServer"
 ]
 
 # Loop through each directory
