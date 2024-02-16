@@ -12,3 +12,6 @@
 [submodule "AccountsServer"]
 	path = AccountsServer
 	url = git@github.com:MisterChief53/Metapulse-accounts-server.git
+[submodule "InferenceServer"]
+	path = InferenceServer
+	url = git@github.com:MisterChief53/Metapulse-inference-server.git
