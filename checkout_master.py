@@ -18,7 +18,13 @@ for directory in directories:
     os.system("git fetch")
     os.system("git checkout master")
     os.system("git pull origin master")
-    
+
+    if directory == ".\\AccountsServer":
+        # Construct the path to postgres-data directory relative to AccountsServer directory
+        postgres_data_dir = os.path.join(os.getcwd(), "postgres-data")
+        if not os.path.exists(postgres_data_dir):
+            # Create postgres-data directory
+            os.mkdir(postgres_data_dir)
     if directory == ".\\WebView\\tests\\cefsimple":
         os.chdir("..\\..\\..\\")
     else:
