@@ -15,3 +15,6 @@
 [submodule "InferenceServer"]
 	path = InferenceServer
 	url = git@github.com:MisterChief53/Metapulse-inference-server.git
+[submodule "World"]
+	path = World
+	url = git@github.com:MisterChief53/Metapulse-world.git
