@@ -6,7 +6,8 @@ directories = [
     ".\\Wiki",
     ".\\WebServer",
     ".\\AccountsServer",
-    ".\\InferenceServer"
+    ".\\InferenceServer",
+    ".\\World"
 ]
 
 # Loop through each directory
