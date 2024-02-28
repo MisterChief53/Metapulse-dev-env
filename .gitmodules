@@ -18,3 +18,6 @@
 [submodule "World"]
 	path = World
 	url = git@github.com:MisterChief53/Metapulse-world.git
+[submodule "o3de-metapulse"]
+	path = o3de-metapulse
+	url = git@github.com:MisterChief53/o3de-metapulse.git
