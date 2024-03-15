@@ -8,7 +8,8 @@ directories = [
     ".\\AccountsServer",
     ".\\InferenceServer",
     ".\\World",
-    ".\\o3de-metapulse"
+    ".\\o3de-metapulse",
+    ".\\Chat"
 ]
 
 # Loop through each directory
