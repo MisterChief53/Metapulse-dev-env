@@ -1,6 +1,3 @@
-[submodule "WebView/tests/cefsimple"]
-	path = WebView/tests/cefsimple
-	url = git@github.com:MisterChief53/CEF-Docker-O3DE.git
 [submodule "Wiki"]
 	path = Wiki
 	url = git@github.com:MisterChief53/Metapulse-wiki.git
