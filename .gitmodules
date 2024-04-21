@@ -21,3 +21,6 @@
 [submodule "Chat"]
 	path = Chat
 	url = git@github.com:MisterChief53/metapulse-chat.git
+[submodule "WebView-CEF"]
+	path = WebView-CEF
+	url = git@github.com:MisterChief53/CEF-Docker-O3DE.git
